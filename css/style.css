@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/moon.jpg");
+    background-size: cover;
+}
+.form {
+    background-color: rgba(255, 255, 255, 0.5);
+    display: block;
+    padding: 2rem;
+    width: 25%;
+    backdrop-filter: blur(10px);
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.form-title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+}
+
+.input-container {
+    position: relative;
+}
+
+
+.input-container input {
+    margin: 8px 0;
+    border: 1px solid #e5e7eb;
+    outline: none;
+    background-color: #fff;
+    padding: 1rem;
+    width: 100%;
+    padding-right: 3rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.submit {
+    display: block;
+    padding: 0.75rem 1.25rem;
+    background-color: #4f46e5;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    width: 100%;
+    text-transform: uppercase;
+    margin: 8px 0;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.signup-link {
+    color: #6b7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: center;
+}
+
+.signup-link a {
+    text-decoration: underline;
+}
+
+#msg{
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin: 10px 0;
+}

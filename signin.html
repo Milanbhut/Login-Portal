@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div  class="form">
+            <p class="form-title">Sign in to your account</p>
+            <div class="input-container">
+                <input type="text" id="name" placeholder="Enter Username" />
+            </div>
+
+            <div class="input-container">
+                <input type="password" id="pass" placeholder="Enter password" />
+            </div>
+
+            <button type="submit" onclick="demo()" class="submit">Sign in</button>
+
+            <p id="msg"></p>
+
+            <p class="signup-link">Don't Have An Account? <a href="signup.html">Sign up</a></p>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        let dname = "milan";
+        let dpass = "123";
+
+        function demo(){
+            let name = document.getElementById("name").value;
+            let pass = document.getElementById("pass").value;
+
+            if(name == dname && pass == dpass){
+                window.location.href = "https://www.amazon.in/"
+            }
+            else if(name == "" && pass == ""){
+                document.getElementById("msg").innerHTML = "Please Enter Details";
+            }
+            else if(name !== dname && pass !== dpass){
+                document.getElementById("msg").innerHTML = "Username And Password Is Incorrect";
+            }
+            else{
+                document.getElementById("msg").innerHTML = "Please Enter valid Value";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
